@@ -56,3 +56,15 @@
 .nav-links ul li:hover::after {
   width: 100%
 }
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links .btn { 
+  float: right;
+}
