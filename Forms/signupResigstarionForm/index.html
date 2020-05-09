@@ -10,24 +10,38 @@
 <body>
   <div class="login-page">
     <div class="form">
-      <form action="" class="register-form">
+      <form action="" class="register-form" id="register-form">
         <input type="text" placeholder="user name">
         <input type="password"placeholder="password">
         <input type="email"placeholder="email">
         <button>register</button>
-        <p class="message">Already Registered? <a href="#">Login</a></p>
+        <p class="message">Already Registered?
+           <a href="#" onclick="showLogin()">Login</a>
+        </p>
       </form>
 
-      <form action="" class="login-form">
+      <form action="" class="login-form" id="login-form">
         <input type="text" placeholder="enter your name">
         <input type="password" placeholder="inter your password">
         <button>Login</button>
-        <p class="message">Not registered ? create an account<a href="#">Register</a></p>
-
-
+        <p class="message">Not registered ? create an account
+          <a href="#" onclick="showRegister()">Register</a>
+        </p>
       </form>
     </div>
   </div>
   <div class="signup-page"></div>
+  <script>
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById('register-form')
+    const showLogin = () => {
+      loginForm.style.display = "block";
+      registerForm.style.display = "none";
+    };
+    const showRegister = () => {
+      loginForm.style.display = "none";
+      registerForm.style.display = "block";
+    };
+  </script>
 </body>
 </html>
