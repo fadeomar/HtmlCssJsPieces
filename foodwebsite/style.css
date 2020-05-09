@@ -82,3 +82,42 @@
 .banner-title span {
   color: yellow;
 }
+
+.vertical-bar {
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.search-icon {
+  height: 60%;
+  width: 80px;
+}
+
+.search-icon .fa {
+  margin: 45px 23px;
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.social-icons {
+  height: 35%;
+  background: yellow;
+  text-align: center;
+  padding-top: 27%;
+  bottom: 0;
+  position: absolute;
+}
+
+.social-icons .fa {
+  margin: 15px 23px;
+  display: block;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
