@@ -36,3 +36,23 @@
   display: inline-block;
   padding: 8px 25px;
 }
+
+.nav-links ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%
+}
