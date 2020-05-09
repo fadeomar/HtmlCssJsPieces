@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 800px;
+  overflow: hidden;
+}
+
+#sliderbox {
+  position: relative;
+  width: 3200px;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#sliderbox img {
+  float: left;
+  width: 800px;
+}
+
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: 0px;
+  }
+  25% {
+    left: -800px;
+  }
+  45% {
+    left: -800px;
+  }
+  50% {
+    left: -1600px;
+  }
+  70% {
+    left: -1600px;
+  }
+  75% {
+    left: -2400px;
+  }
+  95% {
+    left: -2400px;
+  }
+  100% {
+    left: 0px;
+  }
+}
