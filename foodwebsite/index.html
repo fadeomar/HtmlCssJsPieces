@@ -14,8 +14,8 @@
       <div class="nav-logo">
         <img src="./assets/logo.png" alt="logo">
       </div>
-      <div class="nav-links">
-        <i class="fa fa-close" aria-hidden="true"></i>
+      <div class="nav-links" id="nav-links">
+        <i class="fa fa-close" aria-hidden="true" onclick="closeMenu()"></i>
         <ul>
           <a href="#"><li>HOME</li></a>
           <a href="#"><li>ABOUT</li></a>
@@ -23,7 +23,7 @@
         </ul>
         <button type="button" class="btn">SIGN UP</button>
       </div>
-      <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
     </div>
     <div class="banner-title">
       <h1>There is <span>no love sincerer </span><br /> than the love of <span> food</span></h1>
@@ -50,6 +50,15 @@
       </div>
     </div>
   </div>
-  
+  <script>
+    const show = document.getElementById("nav-links")
+    const showMenu = () => {
+      show.style.right = "0";
+    }
+
+    const closeMenu = () => {
+      show.style.right = "-200px";
+    }
+  </script>
 </body>
 </html>
