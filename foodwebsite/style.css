@@ -12,3 +12,27 @@
   overflow-x: hidden;
   position: relative;
 }
+
+.nav-bar {
+  display: flex;
+  padding: 40px 120px;
+}
+
+.nav-logo img {
+  width: 80px;
+}
+
+.nav-links {
+  flex: 1;
+}
+
+.nav-links ul {
+  margin-left: 50px;
+  display: inline;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
