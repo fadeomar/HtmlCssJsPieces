@@ -68,3 +68,17 @@
 .nav-links .btn { 
   float: right;
 }
+
+.banner-title {
+  margin: 80px 130px;
+  color: #fff;
+}
+
+.banner-title h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.banner-title span {
+  color: yellow;
+}
