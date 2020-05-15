@@ -63,3 +63,21 @@ form h2 {
   padding: 5px 0;
   border-bottom:2px solid #d9d9d9;
 }
+
+.input-div.one {
+  margin-top: 0;
+}
+
+.input-div.two {
+  margin-bottom: 40px;
+}
+
+.i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i i {
+  color: #d9d9d9;
+}
