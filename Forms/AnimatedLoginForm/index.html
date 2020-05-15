@@ -7,38 +7,41 @@
   <title>animated login form</title>
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <img src="./assets/wave.png" alt="wave">
-  <div class="img">
-    <img src="./assets/phone.svg" alt="bg">
+  <img src="./assets/wave.png" alt="wave" class="wave">
+  <div class="container">
+    <div class="img">
+      <img src="./assets/phone.svg" alt="bg">
+    </div>
+    <div class="login-container">
+      <form action="index.html">
+        <img class="avatar" src="./assets/user.svg" alt="user">
+        <h2>Welcome</h2>
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+            <div>
+              <h5>username</h5>
+              <input class="input" type="text">
+          </div>
+        </div>
+        <div class="input-div two">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+            <div>
+              <h5>username</h5>
+              <input class="input" type="password">
+          </div>
+        </div>
+        <a href="#">forget password ?</a>
+        <input type="submit" class="btn" value="login">
+      </form>
+    </div>
   </div>
-  <div class="login-container">
-    <form action="index.html">
-      <img src="./assets/user.svg" alt="user">
-      <h2>Welcome</h2>
-      <div class="input-div">
-        <div class="i">
-          <i class="fas fa-user"></i>
-        </div>
-          <div>
-            <h5>username</h5>
-            <input class="input" type="text">
-        </div>
-      </div>
-      <div class="input-div">
-        <div class="i">
-          <i class="fas fa-lock"></i>
-        </div>
-          <div>
-            <h5>username</h5>
-            <input class="input" type="password">
-        </div>
-      </div>
-      <a href="#">forget password ?</a>
-      <input type="submit" class="btn" value="login">
-    </form>
-    <script src="./app.js"></script>
-  </div>
+  <script src="./app.js"></script>
 </body>
 </html>
