@@ -57,11 +57,43 @@ form h2 {
 }
 
 .input-div {
+  position: relative;
   display: grid;
   grid-template-columns: 7% 93%;
   margin: 25px 0;
   padding: 5px 0;
   border-bottom:2px solid #d9d9d9;
+}
+
+.input-div::after, .input-div::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #38d39f;
+  transition: 0.3s;
+}
+
+.input-div::after {
+  right: 50%;
+}
+
+.input-div::before {
+  left: 50%;
+}
+
+.input-div.focus::after, .input-div.focus::before {
+  width: 50%;
+}
+
+.input-div.focus .i i {
+  color: #38d39f;
+}
+
+.input-div.focus div h5 {
+  top: -5px;
+  font-size: 15px;
 }
 
 .input-div.one {
@@ -80,6 +112,7 @@ form h2 {
 
 .i i {
   color: #d9d9d9;
+  transition: .3s;
 }
 
 .input-div > div {
@@ -94,7 +127,6 @@ form h2 {
   transform: translateY(-50%);
   color: #999;
   font-size: 18px;
-  display: none;
   transition: 0.3s;
 }
 
@@ -137,4 +169,13 @@ a:hover {
   border: none;
   background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
   cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-position: right;
 }
