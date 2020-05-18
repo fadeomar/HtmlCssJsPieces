@@ -5,3 +5,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #efefef;
+}
+
+.shoe, .logo {
+  display: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
