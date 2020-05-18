@@ -20,3 +20,17 @@ body {
   align-items: center;
   padding: 40px;
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoe-background {
+  background-color: blue;
+}
+
+.info {
+  background-color: blue;
+}
