@@ -6,10 +6,12 @@ const changeColor = (elm) => {
   const primary = elm.getAttribute('primary'); 
   const color = elm.getAttribute('color');
   const shoe = document.querySelector(`.shoe[color=${color}]`)
-  console.log({primary, color, shoe})
   sizes.forEach(size => size.classList.remove('active'))
   elm.classList.add('active');
 
+  // to change the style color according selecting color 
+  document.documentElement.style.setProperty('--primary', primary);
+  
   shoes.forEach(shoe => shoe.classList.remove('show'));
   shoe.classList.add('show');
 }
