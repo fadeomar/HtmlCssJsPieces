@@ -3,7 +3,8 @@ const colors = document.querySelectorAll('.color');
 
 const changeColor = (elm) => {
   let primary = elm.getAttribute('primary'); 
-  console.log(elm)
+  let color = elm.getAttribute('color')
+  console.log(primary)
   sizes.forEach(size => size.classList.remove('active'))
   elm.classList.add('active')
 }
