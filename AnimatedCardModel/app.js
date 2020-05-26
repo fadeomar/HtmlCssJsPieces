@@ -2,12 +2,23 @@ const sizes = document.querySelectorAll('.size');
 const colors = document.querySelectorAll('.color');
 const shoes = document.querySelectorAll('.shoe');
 const gradients = document.querySelectorAll('.gradient')
+let prevColor = "blue";
+let animationEnd = true;
 
 const changeColor = (elm) => {
+
+   if(!animationEnd) {
+    console.log("animation running now")
+    return; 
+   }
   const primary = elm.getAttribute('primary'); 
   const color = elm.getAttribute('color');
-  const shoe = document.querySelector(`.shoe[color=${color}]`)
-  sizes.forEach(size => size.classList.remove('active'))
+  const shoe = document.querySelector(`.shoe[color=${color}]`);
+  const gradient = document.querySelector(`.gradient[color=${color}]`)
+  const prevGradient = document.querySelector(`.gradient[color=${prevColor}]`)
+  
+
+  colors.forEach(color => color.classList.remove('active'))
   elm.classList.add('active');
 
   // to change the style color according selecting color 
@@ -15,10 +26,21 @@ const changeColor = (elm) => {
 
   shoes.forEach(shoe => shoe.classList.remove('show'));
   shoe.classList.add('show');
+
+  gradients.forEach(g => g.classList.remove('background-animation', 'prev-gradient'));
+  gradient.classList.add('background-animation');
+  prevGradient.classList.add('prev-gradient');
+
+  prevColor = color;
+  animationEnd = false;
+
+  gradient.addEventListener('animationend', () => {
+    animationEnd = true;
+  })
 }
 
 const changeSize = (elm) => {
-  colors.forEach(color => color.classList.remove('active'))
+  sizes.forEach(size => size.classList.remove('active'))
   elm.classList.add('active');
 }
 
