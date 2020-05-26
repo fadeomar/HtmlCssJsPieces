@@ -1,7 +1,8 @@
 const sizes = document.querySelectorAll('.size');
 const colors = document.querySelectorAll('.color');
 const shoes = document.querySelectorAll('.shoe');
-const gradients = document.querySelectorAll('.gradient')
+const gradients = document.querySelectorAll('.gradient');
+const shoeBg = document.querySelector('.shoe-background')
 let prevColor = "blue";
 let animationEnd = true;
 
@@ -51,3 +52,15 @@ sizes.forEach(size => {
 colors.forEach(color => {
   color.addEventListener('click', () => changeColor(color))
 });
+
+let x = window.matchMedia('(max-width: 1000px)');
+
+
+window.addEventListener('resize', () => {
+  if(x.matches){
+    let shoeHeight = shoes[0].offsetHeight;
+    shoeBg.style.height = `${shoeHeight * 1.1}px`;
+  }else {
+    shoeBg.style.height = '475px';
+  }
+})
