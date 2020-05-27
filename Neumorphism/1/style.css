@@ -27,17 +27,19 @@ body {
   border-radius: 30px;
   padding: 2.2rem 2.3rem;
   box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.4),
-    12px 12px 12px 0 rgba(0, 0, 0, 0.85);
+    12px 12px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
 .icon {
   width: 130px;
   height: 130px;
-  border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  box-shadow: -9px -9px 9px 0 rgba(255, 255, 255, 0.4),
+  9px 9px 9px 0 rgba(0, 0, 0, 0.05); 
+  background: linear-gradient(120deg, rgb(228, 228, 228), #fbfbfb);
 }
 
 img {
