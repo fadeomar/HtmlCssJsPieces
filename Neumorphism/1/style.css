@@ -73,6 +73,7 @@ p {
   height: 50px;
   letter-spacing: 0.5px;
   border-radius: 25px;
+  align-self: flex-start;
   box-shadow: -9px -9px 9px 0 rgba(255, 255, 255, 0.4),
   9px 9px 9px 0 rgba(0, 0, 0, 0.05); 
 }
@@ -81,3 +82,4 @@ p {
   box-shadow: inset -9px -9px 9px 0 rgba(255, 255, 255, 0.4),
   inset 9px 9px 9px 0 rgba(0, 0, 0, 0.05); 
 }
+
