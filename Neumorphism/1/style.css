@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.4);
 }
 
 .icon {
@@ -49,5 +50,20 @@ h1 {
 }
 
 p {
-  
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.4rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: #00cec9;
+  width: 100px;
+  height: 50px;
+  letter-spacing: 0.5px;
 }
