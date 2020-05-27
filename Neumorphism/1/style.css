@@ -69,7 +69,15 @@ p {
   font-size: 1.1rem;
   margin-top: 1.5rem;
   color: #00cec9;
-  width: 100px;
+  width: 150px;
   height: 50px;
   letter-spacing: 0.5px;
+  border-radius: 25px;
+  box-shadow: -9px -9px 9px 0 rgba(255, 255, 255, 0.4),
+  9px 9px 9px 0 rgba(0, 0, 0, 0.05); 
+}
+
+.btn:hover {
+  box-shadow: inset -9px -9px 9px 0 rgba(255, 255, 255, 0.4),
+  inset 9px 9px 9px 0 rgba(0, 0, 0, 0.05); 
 }
