@@ -37,3 +37,23 @@ body {
   background-image: linear-gradient(to top, #00f2fe, #4facfe);
   clip-path: circle(400px at 50% -48.5%);
 }
+
+.header {
+  position: relative;
+  height: 265px;
+}
+
+.mail {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.8;
+  transition: .3s;
+  z-index: 3;
+}
+
+.mail:hover {
+  opacity: 1;
+}
