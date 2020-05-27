@@ -165,6 +165,7 @@ body {
 }
 
 .right {
+  padding-top:1.5rem;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -228,4 +229,50 @@ body {
 
 .icon:hover {
   color: #4facfe;
+}
+
+.buttons-wrap {
+  display: flex;
+  margin-top: 5px;
+}
+
+.follow-wrap, .share-wrap {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.follow-wrap:hover, .share-wrap:hover {
+  flex: 5;
+}
+
+.follow {
+  padding: 9.6px 0;
+  width: 100%;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 140%);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 18.1px;
+  margin-right: 3px;
+}
+
+.share {
+  padding: 7.6px 0;
+  width: 100%;
+  border: 2px solid #4facfe;
+  color: #4facfe;
+  text-decoration: none;
+  text-align: center;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 18.1px;
+  margin-right: 3px;
+
 }
