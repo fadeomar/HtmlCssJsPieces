@@ -145,6 +145,10 @@ body {
   opacity: 1;
 }
 
+.hover.active {
+  opacity: 1;
+}
+
 .name {
   font-size: 1.2rem;
   color: #fff;
@@ -309,6 +313,7 @@ body {
 .close {
   position: absolute;
   top: 1rem;
+  right: 1rem;
   width: 30px;
   height: 30px;
   cursor: pointer;
