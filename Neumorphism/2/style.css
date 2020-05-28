@@ -20,4 +20,15 @@ input[type="checkbox"] {
   10px 10px 15px rgba(70, 70, 70, 0.12);
   -webkit-appearance: none;
   outline: none;
+  border: 8px solid #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]::after {
+  font-family: 'FontAwesome';
+  content:'\f011';
+  color: #7a7a7a;
+  font-size: 70px;
 }
