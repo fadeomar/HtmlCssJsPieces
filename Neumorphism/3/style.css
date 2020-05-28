@@ -34,6 +34,7 @@ body {
   left: 25px;
   right: 25px;
   bottom: 25px;
+  z-index: 10;
   background: #240229;
   border-radius: 50%;
   border: 2px solid #240229;
@@ -50,6 +51,7 @@ body {
   border-radius: 50%;
   background-image: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
   filter: blur(20px);
+  z-index: -1;
   animation: animate 0.5s linear infinite;
 }
 
