@@ -55,3 +55,8 @@ ul li label .icon-box {
   border-radius: 10px;
 }
 
+ul li label .icon-box .fa {
+  font-size: 30px;
+  color: #6a9bd8;
+}
+
