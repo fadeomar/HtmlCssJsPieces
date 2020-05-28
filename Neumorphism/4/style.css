@@ -60,3 +60,14 @@ ul li label .icon-box .fa {
   color: #6a9bd8;
 }
 
+
+ul li label input[type="checkbox"]:checked ~ .icon-box{
+  box-shadow: 
+    inset -2px -2px 5px rgba(255, 255, 255, 1),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ul li label input[type="checkbox"]:checked ~ .icon-box .fa {
+  transform: translate(0.95);
+}
